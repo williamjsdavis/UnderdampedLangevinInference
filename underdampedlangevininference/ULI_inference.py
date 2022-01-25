@@ -11,6 +11,8 @@ Reference:
 
 import numpy as np
 
+from ULI_bases import basis_selector
+
 
 class UnderdampedLangevinInference(object): 
     """This class performs the inference of force and diffusion,
