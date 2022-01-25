@@ -8,8 +8,6 @@ Reference:
 
 """
 
-from ULI_projectors import TrajectoryProjectors
-
 
 import numpy as np
 
