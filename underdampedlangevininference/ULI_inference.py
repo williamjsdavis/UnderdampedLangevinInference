@@ -94,7 +94,7 @@ class UnderdampedLangevinInference(object):
         # explicitly with the 'functions' keyword of the 'basis'
         # argument, or by parsing it among the pre-defined bases
         # defined in ULI_bases.
-        import ULI_bases
+        
         if "functions" in self.force_basis:
             funcs = self.force_basis["functions"]
         else:
