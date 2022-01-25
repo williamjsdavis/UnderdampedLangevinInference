@@ -70,11 +70,11 @@ class UnderdampedLangevinInference(object):
             self.diffusion_basis = basis 
             
             # Select a projection basis
-            import ULI_bases
+            
             if "functions" in self.diffusion_basis:
                 funcs = self.diffusion_basis["functions"]
             else:
-                funcs,is_interacting = ULI_bases.basis_selector(self.diffusion_basis,self.data)
+                funcs,is_interacting = basis_selector(self.diffusion_basis,self.data)
 
             # Prepare the functions:
             self.diffusion_projectors = TrajectoryProjectors(self.data.inner_product_empirical,funcs)
@@ -98,7 +98,7 @@ class UnderdampedLangevinInference(object):
         if "functions" in self.force_basis:
             funcs = self.force_basis["functions"]
         else:
-            funcs,is_interacting = ULI_bases.basis_selector(self.force_basis,self.data)
+            funcs,is_interacting = basis_selector(self.force_basis,self.data)
             
         # Prepare the functions:
         self.force_projectors = TrajectoryProjectors(self.data.inner_product_empirical,funcs)   
