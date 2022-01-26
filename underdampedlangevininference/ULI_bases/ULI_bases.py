@@ -5,8 +5,6 @@
 
 import numpy as np
 
-
-
 def basis_selector(basis,data):
     is_interacting = False
     if basis['type'] == 'polynomial':
