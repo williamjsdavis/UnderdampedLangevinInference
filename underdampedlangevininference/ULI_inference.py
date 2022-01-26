@@ -12,6 +12,7 @@ Reference:
 import numpy as np
 
 from UnderdampedLangevinInference.underdampedlangevininference.ULI_bases.ULI_bases import basis_selector
+from UnderdampedLangevinInference.underdampedlangevininference.ULI_projectors.ULI_projectors import TrajectoryProjectors
 
 
 class UnderdampedLangevinInference(object): 
